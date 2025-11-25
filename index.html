@@ -8,52 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!--
-====================================================================
-PORTFOLIO CUSTOMIZATION GUIDE FOR VS CODE
-====================================================================
 
-STEP 1: ADD YOUR PROFILE PHOTO
-------------------------------
-Line ~250 (in About Section):
-Find: <img src="https://via.placeholder.com/300" alt="Divishath Reddy" class="profile-img">
-Replace with: <img src="your-photo.jpg" alt="Divishath Reddy" class="profile-img">
 
-Instructions:
-1. Place your portrait photo in the same folder as index.html
-2. Name it "profile-photo.jpg" or any name you prefer
-3. Update the src="your-photo.jpg" with your actual filename
-4. Recommended: Square photo, 500x500px minimum, professional headshot
-
-STEP 2: ADD YOUR GITHUB LINK
-----------------------------
-Find all instances of: href="https://github.com"
-Replace with: href="https://github.com/YOUR-USERNAME"
-Locations: Hero section (~line 180), Contact section (~line 680)
-
-STEP 3: ADD YOUR LINKEDIN LINK
-------------------------------
-Find all instances of: href="https://linkedin.com"
-Replace with: href="https://linkedin.com/in/YOUR-PROFILE"
-Locations: Hero section (~line 185), Contact section (~line 675)
-
-STEP 4: YOUR EMAIL IS SET
--------------------------
-Already configured: divishathred@gmail.com
-Locations: Hero (~line 190), Contact (~line 670)
-
-STEP 5: ADD NEW PROJECTS
-------------------------
-See detailed template at the bottom of this file (around line ~1100)
-
-STEP 6: RUN YOUR WEBSITE
-------------------------
-1. Save this file as "index.html"
-2. Double-click to open in browser
-3. Or use VS Code Live Server: Right-click > Open with Live Server
-
-====================================================================
--->
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -591,69 +547,3 @@ STEP 6: RUN YOUR WEBSITE
 </body>
 </html>
 
-<!--
-====================================================================
-HOW TO ADD NEW PROJECTS
-====================================================================
-
-1. ADD PROJECT CARD (in Projects Section, around line 500):
-
-<div class="project-card" data-aos="fade-up" data-aos-delay="400">
-    <div class="project-icon">
-        <i class="fas fa-YOUR-ICON"></i>
-    </div>
-    <h3>Your Project Title</h3>
-    <p>
-        Brief description of your project (2-3 sentences)
-    </p>
-    <div class="project-tags">
-        <span class="tag">Technology 1</span>
-        <span class="tag">Technology 2</span>
-        <span class="tag">Technology 3</span>
-    </div>
-    <button class="btn btn-outline" onclick="openModal('projectX')">
-        View Details <i class="fas fa-arrow-right"></i>
-    </button>
-</div>
-
-2. ADD PROJECT MODAL (after existing modals, around line 700):
-
-<div id="projectX" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('projectX')">&times;</span>
-        <h2>Your Project Title</h2>
-        <div class="modal-body">
-            <p class="project-description">
-                Detailed description of your project
-            </p>
-            <h3>Key Features:</h3>
-            <ul class="features-list">
-                <li><i class="fas fa-check"></i> Feature 1</li>
-                <li><i class="fas fa-check"></i> Feature 2</li>
-                <li><i class="fas fa-check"></i> Feature 3</li>
-            </ul>
-            <h3>Technologies Used:</h3>
-            <div class="tech-stack">
-                <span class="tech-tag">Tech 1</span>
-                <span class="tech-tag">Tech 2</span>
-            </div>
-            <h3>Impact:</h3>
-            <p>Description of project impact</p>
-        </div>
-    </div>
-</div>
-
-3. ICON REFERENCE (Font Awesome):
-- fas fa-brain (AI/ML)
-- fas fa-chart-line (Analytics)
-- fas fa-mobile-alt (Mobile)
-- fas fa-database (Database)
-- fas fa-cloud (Cloud)
-- fas fa-robot (Robotics)
-- fas fa-globe (Web)
-- fas fa-shield-alt (Security)
-
-Find more icons at: https://fontawesome.com/icons
-
-====================================================================
--->
