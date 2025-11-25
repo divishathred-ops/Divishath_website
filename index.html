@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divishath Reddy Gundavarapu | Data Science &amp; Business Analytics Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--
+====================================================================
+PORTFOLIO CUSTOMIZATION GUIDE FOR VS CODE
+====================================================================
+
+STEP 1: ADD YOUR PROFILE PHOTO
+------------------------------
+Line ~250 (in About Section):
+Find: <img src="https://via.placeholder.com/300" alt="Divishath Reddy" class="profile-img">
+Replace with: <img src="your-photo.jpg" alt="Divishath Reddy" class="profile-img">
+
+Instructions:
+1. Place your portrait photo in the same folder as index.html
+2. Name it "profile-photo.jpg" or any name you prefer
+3. Update the src="your-photo.jpg" with your actual filename
+4. Recommended: Square photo, 500x500px minimum, professional headshot
+
+STEP 2: ADD YOUR GITHUB LINK
+----------------------------
+Find all instances of: href="https://github.com"
+Replace with: href="https://github.com/YOUR-USERNAME"
+Locations: Hero section (~line 180), Contact section (~line 680)
+
+STEP 3: ADD YOUR LINKEDIN LINK
+------------------------------
+Find all instances of: href="https://linkedin.com"
+Replace with: href="https://linkedin.com/in/YOUR-PROFILE"
+Locations: Hero section (~line 185), Contact section (~line 675)
+
+STEP 4: YOUR EMAIL IS SET
+-------------------------
+Already configured: divishathred@gmail.com
+Locations: Hero (~line 190), Contact (~line 670)
+
+STEP 5: ADD NEW PROJECTS
+------------------------
+See detailed template at the bottom of this file (around line ~1100)
+
+STEP 6: RUN YOUR WEBSITE
+------------------------
+1. Save this file as "index.html"
+2. Double-click to open in browser
+3. Or use VS Code Live Server: Right-click > Open with Live Server
+
+====================================================================
+-->
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">DR</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Divishath Reddy</span>
+                </h1>
+                <div class="typing-container">
+                    <h2 class="hero-subtitle">
+                        <span id="typedText"></span><span class="cursor">|</span>
+                    </h2>
+                </div>
+                <p class="hero-description">
+                    MSc Data Science &amp; Business Analysis student at EDC Paris Business School,
+                    passionate about leveraging data-driven insights and emerging technologies
+                    to solve real-world problems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/divishathred-ops" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/divishath-reddy-gundavarapu-finance-technical/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:divishathred@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="image_1.png" alt="Divishath Reddy Gundavarapu" class="profile-img">
+
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Data Science Enthusiast &amp; Tech Entrepreneur</h3>
+                    <p>
+                        I'm currently pursuing my Master's degree in Data Science &amp; Business Analysis 
+                        at EDC Paris Business School (2024-2026). With a Bachelor's in Computer Science 
+                        from Parul University, I bring a strong technical foundation combined with 
+                        business acumen.
+                    </p>
+                    <p>
+                        My journey in technology has been marked by innovation and entrepreneurship. 
+                        I've developed a blockchain-based money exchange platform, demonstrating my 
+                        ability to work with cutting-edge technologies. I'm passionate about machine 
+                        learning, data analytics, and creating solutions that bridge technology and business.
+                    </p>
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-briefcase"></i> Currently Seeking</h4>
+                        <p>Internship opportunities in Paris focusing on Data Science, Machine Learning, 
+                           or Business Analytics. I'm eager to apply my skills in a professional environment 
+                           and contribute to innovative projects.</p>
+                    </div>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span><strong>Location:</strong> Paris, France</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span><strong>Education:</strong> MSc Data Science</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-language"></i>
+                            <span><strong>Languages:</strong> Telugu, English, French</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-rocket"></i>
+                            <span><strong>Focus:</strong> ML &amp; Blockchain</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary mt-20">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - 2026</span>
+                        <h3>Master of Science (MSc)</h3>
+                        <h4>EDC Paris Business School</h4>
+                        <p class="degree-info">Data Science &amp; Business Analysis</p>
+                        <p>
+                            Advanced program combining data science techniques with business analytics. 
+                            Focusing on machine learning, statistical modeling, business intelligence, 
+                            and data-driven decision making. Currently in MSc 2.
+                        </p>
+                        <div class="course-highlights">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Business Intelligence</span>
+                            <span class="tag">Statistical Analysis</span>
+                            <span class="tag">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Graduated 2023</span>
+                        <h3>Bachelor's Degree</h3>
+                        <h4>Parul University</h4>
+                        <p class="degree-info">Computer Science</p>
+                        <p>
+                            Comprehensive computer science education covering programming fundamentals, 
+                            data structures, algorithms, database management, and software development. 
+                            Built strong foundation in technical problem-solving.
+                        </p>
+                        <div class="course-highlights">
+                            <span class="tag">Programming</span>
+                            <span class="tag">Data Structures</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Software Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Skills &amp; Expertise</h2>
+            <div class="skills-grid">
+                <!-- Data Science & ML -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3><i class="fas fa-brain"></i> Data Science &amp; Machine Learning</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Python Programming</div>
+                        <div class="skill-item">Data Analysis &amp; Pandas</div>
+                        <div class="skill-item">Machine Learning</div>
+                        <div class="skill-item">Deep Learning</div>
+                        <div class="skill-item">Statistical Analysis</div>
+                        <div class="skill-item">Data Visualization</div>
+                        <div class="skill-item">Natural Language Processing</div>
+                        <div class="skill-item">Predictive Modeling</div>
+                    </div>
+                </div>
+
+                <!-- Business Analytics -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-chart-line"></i> Business Analytics</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Business Intelligence</div>
+                        <div class="skill-item">Financial Analysis</div>
+                        <div class="skill-item">Market Research</div>
+                        <div class="skill-item">Data-Driven Decision Making</div>
+                        <div class="skill-item">Excel &amp; Spreadsheet Modeling</div>
+                        <div class="skill-item">Dashboard Creation</div>
+                    </div>
+                </div>
+
+                <!-- Backend Development -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-code"></i> Backend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Dart &amp; Flutter</div>
+                        <div class="skill-item">Firebase/Firestore</div>
+                        <div class="skill-item">RESTful API Development</div>
+                        <div class="skill-item">Database Management</div>
+                        <div class="skill-item">Git &amp; Version Control</div>
+                        <div class="skill-item">Cloud Platforms (GCP)</div>
+                    </div>
+                </div>
+
+                <!-- Emerging Technologies -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-rocket"></i> Emerging Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Blockchain Technology</div>
+                        <div class="skill-item">Smart Contracts</div>
+                        <div class="skill-item">Cryptocurrency Systems</div>
+                        <div class="skill-item">Google Colab</div>
+                        <div class="skill-item">Kaggle Platform</div>
+                        <div class="skill-item">LaTeX Documentation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+             
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Drug-Drug Interaction Prediction</h3>
+                    <p>
+                        Machine learning system to predict potential drug-drug interactions, enhancing 
+                        patient safety through advanced data analysis and predictive modeling.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Healthcare</span>
+                        <span class="tag">Predictive Analytics</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="openModal('project2')">
+                        View Details <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Demand Forecasting System</h3>
+                    <p>
+                        Built a comprehensive demand forecasting system using time series analysis and 
+                        machine learning to optimize inventory and business operations.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Time Series</span>
+                        <span class="tag">Forecasting</span>
+                        <span class="tag">Business Analytics</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="openModal('project3')">
+                        View Details <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+             
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div id="project1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project1')">&times;</span>
+            <h2>Blockchain Money Exchange Platform</h2>
+            <div class="modal-body">
+                <p class="project-description">
+                    An entrepreneurial venture demonstrating innovation in fintech and blockchain technology. 
+                    This platform enables secure, decentralized money exchange using blockchain principles.
+                </p>
+                <h3>Key Features:</h3>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> Decentralized transaction processing</li>
+                    <li><i class="fas fa-check"></i> Smart contract implementation for secure exchanges</li>
+                    <li><i class="fas fa-check"></i> Cryptocurrency integration</li>
+                    <li><i class="fas fa-check"></i> Real-time transaction tracking</li>
+                    <li><i class="fas fa-check"></i> Multi-currency support</li>
+                    <li><i class="fas fa-check"></i> Enhanced security protocols</li>
+                </ul>
+                <h3>Technologies Used:</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">Blockchain</span>
+                    <span class="tech-tag">Smart Contracts</span>
+                    <span class="tech-tag">Web3</span>
+                    <span class="tech-tag">Cryptocurrency</span>
+                    <span class="tech-tag">Distributed Systems</span>
+                </div>
+                <h3>Impact:</h3>
+                <p>
+                    Demonstrated entrepreneurial initiative and deep understanding of blockchain technology, 
+                    creating a practical solution for secure financial transactions in the digital age.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="project2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project2')">&times;</span>
+            <h2>Drug-Drug Interaction Prediction</h2>
+            <div class="modal-body">
+                <p class="project-description">
+                    A machine learning application focused on healthcare safety, predicting potential 
+                    interactions between different medications to enhance patient care.
+                </p>
+                <h3>Key Features:</h3>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> Advanced ML algorithms for interaction prediction</li>
+                    <li><i class="fas fa-check"></i> Comprehensive drug database analysis</li>
+                    <li><i class="fas fa-check"></i> Risk assessment and severity classification</li>
+                    <li><i class="fas fa-check"></i> Data preprocessing and feature engineering</li>
+                    <li><i class="fas fa-check"></i> Model validation and accuracy testing</li>
+                    <li><i class="fas fa-check"></i> Visualization of interaction patterns</li>
+                </ul>
+                <h3>Technologies Used:</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Scikit-learn</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">Data Analysis</span>
+                </div>
+                <h3>Impact:</h3>
+                <p>
+                    Contributing to healthcare safety by providing predictive insights that can help 
+                    medical professionals make informed decisions about drug prescriptions.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="project3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project3')">&times;</span>
+            <h2>Demand Forecasting System</h2>
+            <div class="modal-body">
+                <p class="project-description">
+                    A sophisticated forecasting system combining statistical methods and machine learning 
+                    to predict demand patterns and optimize business operations.
+                </p>
+                <h3>Key Features:</h3>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> Time series analysis and decomposition</li>
+                    <li><i class="fas fa-check"></i> Multiple forecasting algorithms (ARIMA, LSTM)</li>
+                    <li><i class="fas fa-check"></i> Seasonal pattern recognition</li>
+                    <li><i class="fas fa-check"></i> Trend analysis and visualization</li>
+                    <li><i class="fas fa-check"></i> Accuracy metrics and model comparison</li>
+                    <li><i class="fas fa-check"></i> Business insights and recommendations</li>
+                </ul>
+                <h3>Technologies Used:</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Time Series Analysis</span>
+                    <span class="tech-tag">ARIMA</span>
+                    <span class="tech-tag">LSTM</span>
+                    <span class="tech-tag">Matplotlib</span>
+                </div>
+                <h3>Impact:</h3>
+                <p>
+                    Enabling businesses to make data-driven decisions about inventory management, 
+                    resource allocation, and strategic planning through accurate demand predictions.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="project4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project4')">&times;</span>
+            <h2>Backend Authentication System</h2>
+            <div class="modal-body">
+                <p class="project-description">
+                    A secure and scalable authentication system built with Firebase and Flutter, 
+                    implementing industry best practices for user security and data protection.
+                </p>
+                <h3>Key Features:</h3>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> Email and password authentication</li>
+                    <li><i class="fas fa-check"></i> Firebase Firestore integration</li>
+                    <li><i class="fas fa-check"></i> Secure token management</li>
+                    <li><i class="fas fa-check"></i> User profile management</li>
+                    <li><i class="fas fa-check"></i> Password reset functionality</li>
+                    <li><i class="fas fa-check"></i> Session management and security</li>
+                </ul>
+                <h3>Technologies Used:</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Dart</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Firestore</span>
+                    <span class="tech-tag">Authentication</span>
+                </div>
+                <h3>Impact:</h3>
+                <p>
+                    Provided a robust foundation for mobile applications requiring secure user 
+                    authentication, demonstrating expertise in backend development and security.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="contact-intro" data-aos="fade-up">
+                I'm actively seeking internship opportunities in Paris. Whether you have a project 
+                in mind or just want to connect, I'd love to hear from you!
+            </p>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:divishathred@gmail.com">divishathred@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com" target="_blank">Connect with me</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com" target="_blank">View my code</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" data-aos="fade-left">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Divishath Reddy Gundavarapu</h3>
+                    <p>Data Science &amp; Business Analysis Student</p>
+                    <p>Transforming data into insights, ideas into innovation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:divishathred@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Divishath Reddy Gundavarapu. All rights reserved.</p>
+            </div>
+        </div>
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+<!--
+====================================================================
+HOW TO ADD NEW PROJECTS
+====================================================================
+
+1. ADD PROJECT CARD (in Projects Section, around line 500):
+
+<div class="project-card" data-aos="fade-up" data-aos-delay="400">
+    <div class="project-icon">
+        <i class="fas fa-YOUR-ICON"></i>
+    </div>
+    <h3>Your Project Title</h3>
+    <p>
+        Brief description of your project (2-3 sentences)
+    </p>
+    <div class="project-tags">
+        <span class="tag">Technology 1</span>
+        <span class="tag">Technology 2</span>
+        <span class="tag">Technology 3</span>
+    </div>
+    <button class="btn btn-outline" onclick="openModal('projectX')">
+        View Details <i class="fas fa-arrow-right"></i>
+    </button>
+</div>
+
+2. ADD PROJECT MODAL (after existing modals, around line 700):
+
+<div id="projectX" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('projectX')">&times;</span>
+        <h2>Your Project Title</h2>
+        <div class="modal-body">
+            <p class="project-description">
+                Detailed description of your project
+            </p>
+            <h3>Key Features:</h3>
+            <ul class="features-list">
+                <li><i class="fas fa-check"></i> Feature 1</li>
+                <li><i class="fas fa-check"></i> Feature 2</li>
+                <li><i class="fas fa-check"></i> Feature 3</li>
+            </ul>
+            <h3>Technologies Used:</h3>
+            <div class="tech-stack">
+                <span class="tech-tag">Tech 1</span>
+                <span class="tech-tag">Tech 2</span>
+            </div>
+            <h3>Impact:</h3>
+            <p>Description of project impact</p>
+        </div>
+    </div>
+</div>
+
+3. ICON REFERENCE (Font Awesome):
+- fas fa-brain (AI/ML)
+- fas fa-chart-line (Analytics)
+- fas fa-mobile-alt (Mobile)
+- fas fa-database (Database)
+- fas fa-cloud (Cloud)
+- fas fa-robot (Robotics)
+- fas fa-globe (Web)
+- fas fa-shield-alt (Security)
+
+Find more icons at: https://fontawesome.com/icons
+
+====================================================================
+-->
